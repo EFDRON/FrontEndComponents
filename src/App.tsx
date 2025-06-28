@@ -1,9 +1,8 @@
-import { Grid, GridItem, HStack, Image } from "@chakra-ui/react";
+import { Center, Grid, GridItem, HStack, Image } from "@chakra-ui/react";
 import ColorMode from "./components/ColorMode";
 import logo from "./assets/react.svg";
 
-import Choose from "./components/Choose";
-import StudentInfomation from "./components/StudentInfomation";
+import UploadCertificate from "./components/UploadCertificate";
 
 function App() {
   return (
@@ -15,8 +14,10 @@ function App() {
             <ColorMode />
           </HStack>
         </GridItem>
-        <GridItem area="main">
-          <StudentInfomation />
+        <GridItem area="main" padding={2}>
+          <center>
+            <UploadCertificate type="normal"></UploadCertificate>
+          </center>
         </GridItem>
       </Grid>
     </>
