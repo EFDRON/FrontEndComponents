@@ -1,4 +1,4 @@
-import { Avatar, Button, Card, Center, Heading } from "@chakra-ui/react";
+import { Button, Card, Center, Heading } from "@chakra-ui/react";
 
 const Choose = () => {
   return (
