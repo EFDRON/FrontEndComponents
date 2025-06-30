@@ -1,4 +1,4 @@
-import { Box, Button, Card, Center, Field, Input } from "@chakra-ui/react";
+import { Box, Button, Card, Field, Input } from "@chakra-ui/react";
 
 interface Props {
   type: "transfer" | "register";

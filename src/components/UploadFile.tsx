@@ -1,7 +1,6 @@
 import {
   Button,
   FileUpload,
-  useFileUpload,
   type FileUploadFileAcceptDetails,
 } from "@chakra-ui/react";
 import { HiUpload } from "react-icons/hi";

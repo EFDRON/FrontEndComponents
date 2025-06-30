@@ -1,12 +1,4 @@
-import {
-  Box,
-  Card,
-  Center,
-  HStack,
-  Image,
-  VStack,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Card, HStack, Image, VStack, Text } from "@chakra-ui/react";
 import user from "../assets/User.jpg";
 interface Props {
   type: "Certificate" | "Work EXperiance" | "Skill";

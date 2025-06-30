@@ -1,5 +1,4 @@
-import React from "react";
-import { Flex, Box, Button, Spacer } from "@chakra-ui/react";
+import { Flex, Button } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 interface Props {
   pages: string[];

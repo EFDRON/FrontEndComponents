@@ -1,17 +1,7 @@
-import React from "react";
-import {
-  Box,
-  Grid,
-  GridItem,
-  HStack,
-  Image,
-  VStack,
-  Text,
-} from "@chakra-ui/react";
+import { Grid, GridItem, HStack, Image, VStack, Text } from "@chakra-ui/react";
 import ColorMode from "../../components/ColorMode";
 import NavBar from "../../components/NavBar";
 import logo from "../../assets/react.svg";
-import StudentInfomation from "../../components/StudentInfomation";
 import Pending from "../../components/Pending";
 const PendingStud = () => {
   const pendings = [1, 2, 3, 4];
