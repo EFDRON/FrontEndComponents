@@ -1,10 +1,11 @@
-import { Grid, GridItem, HStack, Image } from "@chakra-ui/react";
-import ColorMode from "../components/ColorMode";
-import NavBar from "../components/NavBar";
-import logo from "../assets/react.svg";
-import StudentInfomation from "../components/StudentInfomation";
-
-const StudentHome = () => {
+import { Grid, GridItem, HStack, Image, VStack } from "@chakra-ui/react";
+import ColorMode from "../../components/ColorMode";
+import NavBar from "../../components/NavBar";
+import logo from "../../assets/react.svg";
+import StudentInfomation from "../../components/StudentInfomation";
+import UploadCertificate from "../../components/UploadCertificate";
+import ShowData from "../../components/ShowData";
+const AddSkill = () => {
   return (
     <Grid templateAreas={{ base: `"nav" "main"` }}>
       <GridItem area="nav" justifyContent={"space-between"}>
@@ -24,11 +25,14 @@ const StudentHome = () => {
       </GridItem>
       <GridItem area="main" padding={2}>
         <center>
-          <StudentInfomation></StudentInfomation>
+          <VStack>
+            <UploadCertificate type="skill"></UploadCertificate>
+            <ShowData type="Skill"></ShowData>
+          </VStack>
         </center>
       </GridItem>
     </Grid>
   );
 };
 
-export default StudentHome;
+export default AddSkill;

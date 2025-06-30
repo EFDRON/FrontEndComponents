@@ -1,10 +1,10 @@
 import { Grid, GridItem, HStack, Image } from "@chakra-ui/react";
-import logo from "../assets/react.svg";
-import NavBar from "../components/NavBar";
-import ColorMode from "../components/ColorMode";
-import TransferRegister from "../components/TransferRegister";
+import ColorMode from "../../components/ColorMode";
+import NavBar from "../../components/NavBar";
+import logo from "../../assets/react.svg";
+import StudentInfomation from "../../components/StudentInfomation";
 
-const RegisterToInst = () => {
+const StudentHome = () => {
   return (
     <Grid templateAreas={{ base: `"nav" "main"` }}>
       <GridItem area="nav" justifyContent={"space-between"}>
@@ -24,11 +24,11 @@ const RegisterToInst = () => {
       </GridItem>
       <GridItem area="main" padding={2}>
         <center>
-          <TransferRegister type="register"></TransferRegister>
+          <StudentInfomation></StudentInfomation>
         </center>
       </GridItem>
     </Grid>
   );
 };
 
-export default RegisterToInst;
+export default StudentHome;
