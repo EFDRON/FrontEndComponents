@@ -12,7 +12,7 @@ interface Props {
   type: "Certificate" | "Work EXperiance" | "Skill";
 }
 const ShowData = ({ type }: Props) => (
-  <Center>
+  <Box minWidth={"500px"}>
     <Card.Root flexDirection="row" overflow="hidden" maxW="3xl">
       <Box>
         <Card.Body>
@@ -61,7 +61,7 @@ const ShowData = ({ type }: Props) => (
         <Image objectFit="cover" maxW="200px" src={user} alt="Caffe Latte" />
       )}
     </Card.Root>
-  </Center>
+  </Box>
 );
 
 export default ShowData;

@@ -1,10 +1,11 @@
 import StudentHome from "./pages/StudentHome";
 import RegisterToInst from "./pages/RegisterToInst";
+import AddSkill from "./pages/AddSkill";
 
 function App() {
   return (
     <>
-      <RegisterToInst></RegisterToInst>
+      <AddSkill />
     </>
   );
 }
