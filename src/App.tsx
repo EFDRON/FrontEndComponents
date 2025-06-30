@@ -1,11 +1,11 @@
-import StudentHome from "./pages/StudentHome";
-import RegisterToInst from "./pages/RegisterToInst";
+import AddCert from "./pages/AddCert";
 import AddSkill from "./pages/AddSkill";
+import AddWorkExp from "./pages/AddWorkExp";
 
 function App() {
   return (
     <>
-      <AddSkill />
+      <AddSkill></AddSkill>
     </>
   );
 }

@@ -20,33 +20,51 @@ const UploadCertificate = ({ type }: Props) => {
     <Box minWidth={"500px"}>
       <Card.Root padding={2} maxW="3xl">
         <Card.Header>
-          <Card.Title>Upload Certificate</Card.Title>
+          <Card.Title>
+            {type === "workExperiance"
+              ? "Add Work Experience"
+              : type === "skill"
+              ? "Add Skill"
+              : "Upload Certificate"}
+          </Card.Title>
           <Card.Description>
-            Please provide your certificate details below.
+            Please provide your{" "}
+            {type === "workExperiance"
+              ? "work experience details"
+              : type === "skill"
+              ? "skill details"
+              : "certificate details"}{" "}
+            below.
           </Card.Description>
         </Card.Header>
         <Card.Body>
           <Fieldset.Root size="lg">
             <Fieldset.Content>
               {/* Common Field: Certificate Name */}
-              <Field.Root>
-                <Field.Label>Certificate Name</Field.Label>
-                <Input name="certificateName" />
-              </Field.Root>
-
-              {/* Conditional Fields */}
               {type === "normal" && (
-                <Field.Root>
-                  <Field.Label>Institute Address</Field.Label>
-                  <Input name="instituteAddress" />
-                </Field.Root>
+                <>
+                  <Field.Root>
+                    <Field.Label>Certificate Name</Field.Label>
+                    <Input name="certificateName" />
+                  </Field.Root>
+                  <Field.Root>
+                    <Field.Label>Institute Address</Field.Label>
+                    <Input name="instituteAddress" />
+                  </Field.Root>
+                </>
               )}
 
               {type === "skill" && (
-                <Field.Root>
-                  <Field.Label>Experience</Field.Label>
-                  <Input name="experience" />
-                </Field.Root>
+                <>
+                  <Field.Root>
+                    <Field.Label>Skill Name</Field.Label>
+                    <Input name="skillName" />
+                  </Field.Root>
+                  <Field.Root>
+                    <Field.Label>Experience</Field.Label>
+                    <Input name="experience" />
+                  </Field.Root>
+                </>
               )}
 
               {type === "workExperiance" && (
