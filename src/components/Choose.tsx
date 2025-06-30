@@ -1,4 +1,5 @@
 import { Button, Card, Center, Heading } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
 
 const Choose = () => {
   return (
@@ -11,8 +12,12 @@ const Choose = () => {
           <Card.Description></Card.Description>
         </Card.Body>
         <Card.Footer justifyContent={"center"} spaceX={2}>
-          <Button variant="outline">SignUp</Button>
-          <Button>Login</Button>
+          <RouterLink to="/register">
+            <Button variant="outline">SignUp</Button>
+          </RouterLink>
+          <RouterLink to="/student-home">
+            <Button>Login</Button>
+          </RouterLink>
         </Card.Footer>
       </Card.Root>
     </Center>
