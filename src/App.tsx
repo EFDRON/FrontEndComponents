@@ -1,9 +1,10 @@
 import StudentHome from "./pages/StudentHome";
+import RegisterToInst from "./pages/RegisterToInst";
 
 function App() {
   return (
     <>
-      <StudentHome></StudentHome>
+      <RegisterToInst></RegisterToInst>
     </>
   );
 }
