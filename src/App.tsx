@@ -1,11 +1,9 @@
-import InstHome from "./pages/InstPages/InstHome";
-import PendingStud from "./pages/InstPages/PendingStud";
-import Transfer from "./pages/InstPages/Transfer";
+import AddOfficialCert from "./pages/InstPages/AddOfficialCert";
 
 function App() {
   return (
     <>
-      <Transfer></Transfer>
+      <AddOfficialCert></AddOfficialCert>
     </>
   );
 }
