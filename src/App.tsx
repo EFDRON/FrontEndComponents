@@ -1,10 +1,11 @@
 import InstHome from "./pages/InstPages/InstHome";
 import PendingStud from "./pages/InstPages/PendingStud";
+import Transfer from "./pages/InstPages/Transfer";
 
 function App() {
   return (
     <>
-      <PendingStud></PendingStud>
+      <Transfer></Transfer>
     </>
   );
 }
