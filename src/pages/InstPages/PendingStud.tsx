@@ -19,6 +19,7 @@ const PendingStud = () => {
               "Transfer Students",
               "Add Certificate",
             ]}
+            type="Institution"
           ></NavBar>
           <ColorMode />
         </HStack>

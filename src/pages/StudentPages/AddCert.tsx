@@ -5,21 +5,14 @@ import logo from "../../assets/react.svg";
 
 import UploadCertificate from "../../components/UploadCertificate";
 import ShowData from "../../components/ShowData";
+import { pages } from "./StudentHome";
 const AddCert = () => {
   return (
     <Grid templateAreas={{ base: `"nav" "main"` }}>
       <GridItem area="nav" justifyContent={"space-between"}>
         <HStack justifyContent="space-between" padding={2}>
           <Image src={logo} />
-          <NavBar
-            pages={[
-              "Home",
-              "Register to Institution",
-              "Add Skill",
-              "Add Certificate",
-              "Add Work Experience",
-            ]}
-          ></NavBar>
+          <NavBar pages={pages} type="Student"></NavBar>
           <ColorMode />
         </HStack>
       </GridItem>

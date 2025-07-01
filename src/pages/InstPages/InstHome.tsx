@@ -17,6 +17,7 @@ const StudentHome = () => {
               "Transfer Students",
               "Add Certificate",
             ]}
+            type="Institution"
           ></NavBar>
           <ColorMode />
         </HStack>
