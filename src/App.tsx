@@ -1,5 +1,4 @@
-import Home from "./pages/AdminPages/Home";
-import AddOfficialCert from "./pages/InstPages/AddOfficialCert";
+import Home from "./pages/RecruiterPages/Home";
 
 function App() {
   return (

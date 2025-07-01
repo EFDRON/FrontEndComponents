@@ -1,7 +1,7 @@
 import { Box, Button, Card, Field, Input } from "@chakra-ui/react";
 
 interface Props {
-  type: "transfer" | "register";
+  type: "transfer" | "register" | "fetch";
 }
 
 const TransferRegister = ({ type }: Props) => {
@@ -12,12 +12,14 @@ const TransferRegister = ({ type }: Props) => {
           <Card.Title>
             {type == "register"
               ? "Register With Institution"
+              : type === "fetch"
+              ? "Fetch Student"
               : "Transfer Student"}
           </Card.Title>
           <Card.Description>
             {type === "register"
               ? "Please Fill the institution Address"
-              : "Fill the Student and Institiution Address"}
+              : "Fill the Address"}
           </Card.Description>
         </Card.Header>
         <Card.Body>
@@ -29,13 +31,23 @@ const TransferRegister = ({ type }: Props) => {
           )}
           <Field.Root>
             <Field.Label>
-              {type === "register" ? "Register at:" : "Transfer to:"}
+              {type === "register"
+                ? "Register at:"
+                : type === "fetch"
+                ? "Fetch from:"
+                : "Transfer to:"}
             </Field.Label>
             <Input placeholder="Institute Address" />
           </Field.Root>
         </Card.Body>
         <Card.Footer>
-          <Button>{type === "register" ? "Register" : "Transfer"}</Button>
+          <Button>
+            {type === "register"
+              ? "Register"
+              : type === "transfer"
+              ? "Transfer"
+              : "Fetch"}
+          </Button>
         </Card.Footer>
       </Card.Root>
     </Box>
